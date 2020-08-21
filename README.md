@@ -1,2 +1,2 @@
 # web
-Hosting my HTML, JS, python, and django projects
+Hosting my HTML and JSprojects
