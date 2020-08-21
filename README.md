@@ -1,2 +1,2 @@
 # web
-Hosting my HTML and JSprojects
+Hosting my HTML and JS projects
