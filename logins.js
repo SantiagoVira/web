@@ -4,4 +4,4 @@ function GetAcc(){
   let usr=document.getElementById("username").value
   let pass=document.getElementById("password").value
 }
-fwrite(file, str);// str is the content that is to be written into the file.
+fwrite(file, 'Hello World!');// str is the content that is to be written into the file.
