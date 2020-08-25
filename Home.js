@@ -53,8 +53,6 @@ let I = string.indexOf('World');
 // let variable1=value1, variable2=value2 NOT let variable1, variable2=value1, value2
 // var makes global variables, let makes locals that cant be redefined
 let FIRST=string.split(' ')[0], LAST=string.split(' ')[1];
-console.log('First:'+FIRST+newline+'Last:'+LAST);
-
 
 let first=string.slice(0,string.indexOf(' '));
 let last=string.slice(string.indexOf(' ')+1, string.length-1);
