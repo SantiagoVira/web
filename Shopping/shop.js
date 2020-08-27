@@ -1,4 +1,3 @@
-
 function reset(){
     //gets rid of the lists
     localStorage.setItem('storedItem', JSON.stringify([]));
@@ -49,5 +48,3 @@ function remove(){
     //for the buttons to mark it as gotten
     null;
 }
-
-
