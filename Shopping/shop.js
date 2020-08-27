@@ -1,13 +1,3 @@
-const fs = require('fs') 
-
-function read(){
-    null
-}
-
-function write(){
-    null
-}
-
 
 function reset(){
     //gets rid of the lists
@@ -27,12 +17,7 @@ function AddItem(item){
 
     let final=document.getElementById('buttons')
     console.log(final)
-    final.appendChild(Label, document.createElement("br"))
-    
-    
-    str = fread('all.txt',0)
-    console.log(str)
-          
+    final.appendChild(Label, document.createElement("br"))          
 
 }
 
