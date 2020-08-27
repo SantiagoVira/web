@@ -9,14 +9,21 @@ function ClearLabels(){
     document.getElementById('buttons').innerHTML=''
 }
 
+
 function AddItem(item){
     let Label=document.createElement('p');
     Label.appendChild(document.createTextNode(item))
     Label.className='buttons'
 
+    let Box=document.createElement('input');
+    Box.type='checkbox'
+    Box.className='checkboxes'
+    Label.appendChild(Box)
+
     let final=document.getElementById('buttons')
-    console.log(final)
-    final.appendChild(Label, document.createElement("br"))          
+    final.appendChild(Label)
+    //final.appendChild(Box)
+    //final.appendChild(document.createElement("br"))          
 
 }
 
