@@ -17,6 +17,11 @@ function AddItem(item){
     let final=document.getElementById('buttons')
     console.log(final)
     final.appendChild(Label, document.createElement("br"))
+    
+    
+    str = fread('all.txt',0)
+    console.log(str)
+          
 
 }
 
