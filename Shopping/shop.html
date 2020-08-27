@@ -12,11 +12,12 @@
         text-align: center;
       }
       .buttons{
-        margin-left: 125px;
+        text-align:center;
+        margin-left: 36.5%;
         border-radius: 25px;
         background: #86df0b;
         padding: 15px; 
-        width: 125px;
+        width: 25%;
         height: 75px; 
         
       }
@@ -24,13 +25,28 @@
         border: none;
         border-radius: 25px;
         background:#cf1a13;
-        margin-left:25px;
-        margin-top:25px;
+        margin-left:1.5%;
+        margin-top:1.5%;
         font-size:17px;
-        padding: 15px 5px;
+        padding: 15px 10px;
       }
       .Reset:hover {
         background-color: #cf1913c9;
+    }
+    .Adding{
+        width:40%;
+        height:50px;
+        background:#b0c4de73;
+        border:none;
+        border-radius:20px;
+        font-size:20px;
+    }
+    .AddingBtn{
+        width:25%;
+        height:50px;
+        background:LightGreen;
+        border:none;
+        border-radius: 25px;
     }
   </style>
   
@@ -48,13 +64,17 @@
     <br>
     <br>
     <h3>Item:</h3>
-    <input id='item'>
+    <input id='item' class='Adding'>
     <br>
     <br>
-    <button type="button" onclick="Add();">Add Item to list</button>
+    <button type="button" onclick="Add();" class='AddingBtn'>Add Item to list</button>
+    <br>
+    <br>
+    <br>
+    <br>
       
     </div>
-    <div id='buttons' style='float:left'></div>
+    <div id='buttons'></div>
     
   
   
