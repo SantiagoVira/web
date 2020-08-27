@@ -9,7 +9,9 @@
 
   <style>
       .maintext{
+        float:left;
         text-align: center;
+        width:80%;
       }
       .buttons{
         text-align:center;
@@ -19,9 +21,10 @@
         padding: 15px; 
         width: 25%;
         height: 75px; 
-        
       }
       .Reset{
+          width:10%;
+        float:left;
         border: none;
         border-radius: 25px;
         background:#cf1a13;
@@ -48,6 +51,15 @@
         border:none;
         border-radius: 25px;
     }
+    .checkboxes{
+        float:left;
+        /*font-size: 50px;
+        background: #86df0b;*/
+        margin-left: 70%;
+        border-radius: 25px;
+        width: 10%;
+
+    }
   </style>
   
 </head>
@@ -68,15 +80,13 @@
     <br>
     <br>
     <button type="button" onclick="Add();" class='AddingBtn'>Add Item to list</button>
-    <br>
-    <br>
-    <br>
-    <br>
-      
-    </div>
-    <div id='buttons'></div>
+
+    <br><br><br><br>
     
-  
+    
+    <div id='buttons'></div>    
+
+    </div>
   
 </body>
 </html>
