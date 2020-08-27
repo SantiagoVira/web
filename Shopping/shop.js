@@ -1,3 +1,14 @@
+const fs = require('fs') 
+
+function read(){
+    null
+}
+
+function write(){
+    null
+}
+
+
 function reset(){
     //gets rid of the lists
     localStorage.setItem('storedItem', JSON.stringify([]));
