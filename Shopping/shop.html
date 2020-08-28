@@ -14,10 +14,11 @@
         width:80%;
       }
       .buttons{
-        text-align:center;
+        text-align:left;
         margin-left: 36.5%;
         border-radius: 25px;
-        background: #86df0b;
+        font-size: 20px;
+        background: #E0607E;
         padding: 15px; 
         width: 25%;
         height: 75px; 
@@ -51,14 +52,9 @@
         border:none;
         border-radius: 25px;
     }
-    .checkboxes{
-        float:left;
-        /*font-size: 50px;
-        background: #86df0b;*/
-        margin-left: 70%;
-        border-radius: 25px;
-        width: 10%;
-
+    .big{
+        width:25%;
+        height:25%;
     }
   </style>
   
@@ -76,10 +72,10 @@
     <br>
     <br>
     <h3>Item:</h3>
-    <input id='item' class='Adding'>
+    <input id='item' class='Adding' onkeyup="empty()">
     <br>
     <br>
-    <button type="button" onclick="Add();" class='AddingBtn'>Add Item to list</button>
+    <button type="button" onclick="Add();" class='AddingBtn' id='addbutton' disabled>Add Item to list</button>
 
     <br><br><br><br>
     
