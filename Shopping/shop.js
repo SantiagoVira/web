@@ -76,6 +76,7 @@ function Add(){
     AddAll()
 
     document.getElementById('item').value = ''
+    document.getElementById('addbutton').disabled = true;
     }
 
     function empty() {
