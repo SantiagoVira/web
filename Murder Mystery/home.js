@@ -81,6 +81,8 @@ class Player{
             p.s=Math.abs((p.s+s).toFixed(1))
             
         }
+
+        this.div.remove()
     }
 
 }
@@ -191,6 +193,30 @@ function create(role){
     }
 
 
+    let minusbuttonI = document.createElement("button");
+    minusbuttonI.innerHTML = "-";
+    minusbuttonI.className = 'leave leaveI'
+    minusbuttonI.onclick=function (){
+        ppp.Leave('I')
+    }
+    newDiv.appendChild(minusbuttonI);
+
+    let minusbuttonS = document.createElement("button");
+    minusbuttonS.innerHTML = "-";
+    minusbuttonS.className = 'leave leaveS'
+    minusbuttonS.onclick=function (){
+        ppp.Leave('S')
+    }
+    newDiv.appendChild(minusbuttonS);
+
+    let minusbuttonM = document.createElement("button");
+    minusbuttonM.innerHTML = "-";
+    minusbuttonM.className = 'leave leaveM'
+    minusbuttonM.onclick=function (){
+        ppp.Leave('M')
+    }
+    newDiv.appendChild(minusbuttonM);
+
     
     newDiv.appendChild(input);
     document.body.appendChild(newDiv);
@@ -213,7 +239,8 @@ function reveal(m,s,III){
     let divA= document.createElement("div");
     divA.className = "flip-card"
     divA.id='FlipCardDiv'
-    CurrentPlayer.div.appendChild(divA);
+    let currentdiv=CurrentPlayer.div  // Get the <ul> element to insert a new node
+    currentdiv.insertBefore(divA, currentdiv.childNodes[-1]); 
 
     
     let divB= document.createElement("div");
