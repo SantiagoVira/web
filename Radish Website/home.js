@@ -5,6 +5,7 @@ function print(txt){
 
 //Be sure to add to the top of ISSUES!!!
 let issues={
+    'Radish Cover.jpg':'11.20.pdf',
     'Quarantine Cover.jpg':'5.20.pdf',
     'Bernie Cover.jpg':'3.20.pdf',
 }
