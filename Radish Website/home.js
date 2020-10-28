@@ -9,6 +9,7 @@ let issues={
     'Quarantine Cover.jpg':'5.20.pdf',
     'Bernie Cover.jpg':'3.20.pdf',
     'Feb Cover.jpg':'2.20.pdf',
+    'https://cdn11.bigcommerce.com/s-1103cbqbtv/images/stencil/1280x1280/products/20300/20678/227522__81914.1595518352.jpg?c=1':'2.20.pdf',
 }
 
 function load3(){
