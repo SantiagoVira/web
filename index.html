@@ -8,7 +8,10 @@
     <title>Santiago</title>
     
     <style>
-        
+        :root {
+            --linkW:50%;
+            --margin:100% - var(--linkW)
+        }
         body{
             margin:0;
             
@@ -18,9 +21,8 @@
             }
 
         .link{
-            max-width: 10%;
+            max-width: 100%;
             text-decoration:none;
-            
         }
         a:link {text-decoration:none;color:aliceblue;}
         a:visited {text-decoration:none;color:aliceblue;}
@@ -49,10 +51,24 @@
             user-select: none; /* Standard */
         }
 
+        .pTitle{
+            font-size:40;
+            text-align: center;
+            display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--linkW);
+        }
+
+        .r{margin-right: var(--margin); padding-right: 10%;}
+        .l{margin-left: var(--margin); padding-left: 10%;}
         
     </style>
 </head>
-<body>
+<body onload='loadup()'>
+
+
+    <script src='home.js'></script>
     <p style="padding-bottom:75px;"></p>
     
 
@@ -78,27 +94,9 @@
     </div>
 
 
-    <br>
+    <p style="padding-bottom:10%;"></p>
 
-    <div name='Projects'>
-
-        <a href="Cobra Kai/home.html">
-            <img alt="Cobra Kai" src="I/ck.png" class='link'>
-        </a>
-        
-        <a href='Shopping/shop.html'>
-            <img alt="Shopping List" src="I/sc.png" class='link'>
-        </a>
-        
-        <a href="Murder Mystery/home.html">
-            <img alt="Murder Mystery" src="I/mm.png" class='link'>
-        </a>
-        
-        <a href="Radish Website/home.html">
-            <img alt="Radish" src="I/r.png" class='link'>
-        </a>
-
-    </div>
+    <div id='projects'></div>
     
 </body>
 </html>
