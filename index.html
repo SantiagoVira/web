@@ -9,8 +9,9 @@
     
     <style>
         :root {
-            --linkW:50%;
-            --margin:100% - var(--linkW)
+            --linkW:40%;
+            --margin:100% - var(--linkW);
+            --linkpad:-20%;
         }
         body{
             margin:0;
@@ -35,15 +36,15 @@
             margin-right:3%;
         }
 
-        .desc{
+        .selfdesc{
             text-align:left;
             font-family: 'Roboto', sans-serif;
             word-wrap: break-word;
             display:block;
             width:58%;
-            color:#fff;
             font-size:30px;
             margin-left: 5%;
+            color:white;
 
             -webkit-user-select: none; /* Safari */        
             -moz-user-select: none; /* Firefox */
@@ -60,8 +61,21 @@
   max-width: var(--linkW);
         }
 
-        .r{margin-right: var(--margin); padding-right: 10%;}
-        .l{margin-left: var(--margin); padding-left: 10%;}
+        .r{margin-right: var(--margin); padding-right: var(--linkpad);}
+        .l{margin-left: var(--margin); padding-left: var(--linkpad);}
+
+        .desc{
+            text-align:center;
+            font-family: 'Roboto', sans-serif;
+            word-wrap: break-word;
+            display:block;
+            width:80%;
+            font-size:25px;
+            margin-left: 5%;
+
+            padding-left:5%;
+            padding-right:5%;
+        }
         
     </style>
 </head>
@@ -77,7 +91,7 @@
         <img alt="Hi There!" src="I/myAvatar.png" class='avatar'>
         
 
-        <p class='desc'>
+        <p class='selfdesc'>
 
             <b style='font-size:45px;'>Hi There!</b>
             <br><br>

@@ -1,10 +1,29 @@
 //  ID : [file, img, name]
-let P={
+let descs={
+    
+    'Radish':`In my freshman year at highschool, I joined a satirical school newspaper called The Radish. I thought it might be cool
+    to make a website for it. So I did. The website includes contacts, quotes from members, and every digitized issue of the magazine I could find.
+    It looks pretty cool, check it out.`,
 
-    'CobraKai':["Cobra Kai/home.html","I/ck.png", 'Cobra Kai Clone'], 
-    'ShoppingList':['Shopping/shop.html',"I/sc.png", 'Shopping List App'],
-    'MurderMystery':["Murder Mystery/home.html","I/mm.png", 'Murder Mystery Role Picker'],
+    'MurderMystery' :`I play Murder Mystery with one of my friends and I saw that we needed a better system for picking roles. It started
+    as picking post-its, which had a lot of problems. Then in Python I made a random word picker to choose, which was better, but not perfect.
+    This system, although it has a few confusing bugs, takes in players names and based on weights chooses who gets what role (meaning if you
+    were one role it is less likely you will be that role next round)`,
+
+    'ShoppingList': `This was a fun beginner project I did when I was learning to build websites with code. It's a little rough
+    around the edges but I think it's pretty cool. Plus, I made it so that it stays in your browser until you press the clear button, 
+    even after you close the tab!`,
+
+    'CobraKai':`When I was watching the Cobra Kai series on Netflix, I wanted to recreate the website they made on the show. 
+    They showed very little of the website for not a lot of time, but I think I did a pretty good job at recreating it. 
+    Sidenote: watch Cobra Kai, it's good.`,
+
+}
+let P={
     'Radish':["Radish Website/home.html","I/r.png", 'Radish Newspaper Website'], 
+    'MurderMystery':["Murder Mystery/home.html","I/mm.png", 'Murder Mystery Role Picker'],
+    'ShoppingList':['Shopping/shop.html',"I/sc.png", 'Shopping List App'],
+    'CobraKai':["Cobra Kai/home.html","I/ck.png", 'Cobra Kai Clone'], 
 
 }
 
@@ -16,6 +35,7 @@ function loadup(){
         let doc=data[0]
         let img=data[1]
         let name=data[2]
+        let desc=descs[ID]
 
         let a=document.createElement('a');
         a.href=doc;
@@ -39,10 +59,16 @@ function loadup(){
         );
         
         //Description
-
+        let description = document.createElement("P");
+        description.appendChild(
+            document.createTextNode(desc)
+        );
+        description.className='desc'
         
+        //Put everything on the website
         a.appendChild(title);
         a.appendChild(image);
+        a.appendChild(description);
 
         if(left){
             left=false;
