@@ -18,11 +18,15 @@ let descs={
     They showed very little of the website for not a lot of time, but I think I did a pretty good job at recreating it. 
     Sidenote: watch Cobra Kai, it's good.`,
 
+    'StopWatch': `This is another beginner app I made to learn JavaScript and advance my coding skills. Its just the basic online
+    stopwatch format that almost everyone knows. There is noting super special about this, but I just thought I would put it here.`
+
 }
 let P={
     'Radish':["Radish Website/home.html","I/r.png", 'Radish Newspaper Website'], 
     'MurderMystery':["Murder Mystery/home.html","I/mm.png", 'Murder Mystery Role Picker'],
     'ShoppingList':['Shopping/shop.html',"I/sc.png", 'Shopping List App'],
+    'StopWatch' :['Stopwatch/index.html', 'I/sw.jpg', 'Stop Watch App'],
     'CobraKai':["Cobra Kai/home.html","I/ck.png", 'Cobra Kai Clone'], 
 
 }
