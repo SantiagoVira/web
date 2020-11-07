@@ -65,10 +65,15 @@ function loadup(){
         );
         description.className='desc'
         
+        //Spacer below project
+        let spacer = document.createElement("P");
+        spacer.className='spacer'
+        
         //Put everything on the website
         a.appendChild(title);
         a.appendChild(image);
         a.appendChild(description);
+        a.appendChild(spacer);
 
         if(left){
             left=false;
@@ -81,5 +86,6 @@ function loadup(){
 
         let div=document.getElementById('projects')
         div.appendChild(a);
+
     }
 }
