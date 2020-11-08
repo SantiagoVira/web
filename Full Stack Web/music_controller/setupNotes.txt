@@ -1,0 +1,6 @@
+C:\Users\Santi\Desktop\GitHub\web\Full Stack Web\music_controller> python manage.py runserver
+Starting development server at http://127.0.0.1:8000/
+
+Full Stack Web\music_controller\music_controller\urls.py  :  Controls URLs originally taken, in the file directs to..
+
+Full Stack Web\music_controller\api\urls.py  :  Which does the same thing using path('additional word (/home)', Function to execute)
