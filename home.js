@@ -19,10 +19,14 @@ let descs={
     Sidenote: watch Cobra Kai, it's good.`,
 
     'StopWatch': `This is another beginner app I made to learn JavaScript and advance my coding skills. Its just the basic online
-    stopwatch format that almost everyone knows. There is noting super special about this, but I just thought I would put it here.`
+    stopwatch format that almost everyone knows. There is noting super special about this, but I just thought I would put it here.`,
+
+    'Quiz': `This was my teams entry to my first ever hackathon. It is a website that quizes you on your knowledge of Covid-19
+    and hopefully helps you learn a little bit.`,
 
 }
 let P={
+    'Quiz':['quiz/index.html', 'quiz/L/Icon.png', 'Covid-19 Quiz'],
     'Radish':["Radish Website/home.html","I/r.png", 'Radish Newspaper Website'], 
     'MurderMystery':["Murder Mystery/home.html","I/mm.png", 'Murder Mystery Role Picker'],
     'ShoppingList':['Shopping/shop.html',"I/sc.png", 'Shopping List App'],
